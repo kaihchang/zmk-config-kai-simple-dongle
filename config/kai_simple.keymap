@@ -37,6 +37,7 @@
             timeout-ms = <50>;
             key-positions = <21 22>;
             bindings = <&kp TAB>;
+            layers = <0 1 2 3>;
         };
 
         combo_return {
@@ -55,6 +56,7 @@
             timeout-ms = <50>;
             key-positions = <16 19>;
             bindings = <&highlight_macro>;
+            layers = <0 1 2 3>;
         };
 
         combo_toggle1 {
@@ -199,11 +201,15 @@
         gaming_layer {
             display-name = "GAME";
             bindings = <
-&kp R  &kp Q  &kp C  &kp E           &kp T      &kp T           &kp I     &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &to 0
-&kp F  &kp A  &kp W  &kp D           &kp G      &kp G           &kp LEFT  &kp UP           &kp RIGHT          &kp F12
-&kp Z  &kp X  &kp S  &kp V           &kp B      &studio_unlock  &trans    &kp DOWN         &trans             &kp LA(TAB)
-                     &kp LEFT_SHIFT  &kp SPACE  &kp Z           &kp X
+&kp Q    &kp C  &kp E  &kp R       &kp T      &to 0           &kp U     &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp F12
+&kp TAB  &kp A  &kp W  &kp D       &kp F      &kp H           &kp LEFT  &kp UP           &kp RIGHT          &kp LA(TAB)
+&kp Z    &kp X  &kp S  &kp V       &kp B      &studio_unlock  &kp M     &kp DOWN         &kp TAB            &kp LSHIFT
+                       &kp LSHIFT  &kp SPACE  &kp Z           &kp X
             >;
         };
+
+        _EXTRA1 { status = "reserved"; };
+
+        _EXTRA2 { status = "reserved"; };
     };
 };
